@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function Revew() {
+function Revew({items}) {
+  const [product,setProduct] = useState("");
+
+  useEffect(()=>{
+    console.log(items)
+  })
+  
   return (
     <div>
-      <h2>Revew</h2>
+      {
+        items && items.map(revewItem => <h2>HI</h2>)
+      }
     </div>
   )
 }

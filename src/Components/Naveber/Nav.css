@@ -128,6 +128,27 @@
   color:var(--orange);
 }
 
+.shop-icon{
+  position: relative;
+}
+.shop-icon::after{
+  content: attr(item-update-before);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--orange);
+  top: -9px;
+  right: -2px;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+}
+.not-after::after{
+  content:"";
+}
+.shop{
+  font-size: 1.6rem;
+}
 /* resoinsive code  */
 @media screen and (max-width:768px)  {
   .menu-icon{

@@ -6,10 +6,10 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Nav.css";
 
-function Navber() {
+function Navber({items}) {
   const [togle,setTogle] = useState(true);
 
-  
+  console.log(items)
 
   return (
     <nav className="container">
@@ -54,7 +54,9 @@ function Navber() {
         </ul>
         <div className="nav-cp-box">
           <Link to="revew" className="link">
-            <CgShoppingCart />
+          <span className={items === 0 ? "not-after" : "shop-icon"}   item-update-before={items}>
+            <CgShoppingCart className="shop"/>
+            </span>
           </Link>
 
           <div className="menu-icon"

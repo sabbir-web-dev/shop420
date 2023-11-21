@@ -4,7 +4,7 @@ import Data from '../fakeData/db'
 import { v4 as uuidv4 } from 'uuid';
 import './Shop.css'
 
-function Shop() {
+function Shop({getCount}) {
   const [products,setProducts] = useState(null);
 
   useEffect(()=>{
@@ -15,7 +15,7 @@ function Shop() {
   return (
     <div className='productWrap'>
       {products && 
-        products.map(product => <Product key={uuidv4()} product={product} id={uuidv4()} />)
+        products.map(product => <Product getCount={getCount} key={uuidv4()} product={product} id={uuidv4()} />)
       }
     </div>
   )
