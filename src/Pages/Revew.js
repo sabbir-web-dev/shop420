@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect,  } from 'react'
 
 function Revew({items}) {
-  const [product,setProduct] = useState("");
 
   useEffect(()=>{
     console.log(items)
