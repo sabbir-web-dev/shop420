@@ -7,11 +7,10 @@ function Product({ product, id,getCount }) {
     product;
 
   const hendleClick = () => {
-    console.log("hi")
     const selectProdunt = {
       id: id,
       img:img,
-      newPricr:newPrice,
+      newPrice:newPrice,
       prevPrice:prevPrice,
       star:star,
       title:title,

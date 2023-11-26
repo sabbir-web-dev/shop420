@@ -1,15 +1,13 @@
-import React, { useEffect,  } from 'react'
+import React from 'react'
+import RevewItems from '../Components/RevewItems/RevewItems'
+
 
 function Revew({items}) {
 
-  useEffect(()=>{
-    console.log(items)
-  })
-  
   return (
     <div>
       {
-        items && items.map(revewItem => <h2>HI</h2>)
+        items && items.map(revewItem => <RevewItems key={RevewItems.id} items={revewItem} />)
       }
     </div>
   )

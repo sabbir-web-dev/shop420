@@ -15,7 +15,7 @@ function Routers() {
 
   const itemCounthendeler = (count) => {
     setItemCount(itemCount + 1);
-    setitems([{count},...items])
+    setitems([...items,count])
   };
 
   return (

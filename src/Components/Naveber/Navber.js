@@ -9,8 +9,6 @@ import "./Nav.css";
 function Navber({items}) {
   const [togle,setTogle] = useState(true);
 
-  console.log(items)
-
   return (
     <nav className="container">
       <div className="nav-row">
