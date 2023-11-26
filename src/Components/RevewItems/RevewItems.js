@@ -2,7 +2,7 @@ import React from 'react'
 
 function RevewItems({items}) {
   console.log(items);
-  const {id,img,category,company,newPrice,color,title}=items;
+  const {img,category,company,newPrice,title}=items;
   return (
     <div>
       <div className="">
