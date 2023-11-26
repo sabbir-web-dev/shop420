@@ -7,7 +7,9 @@ function RevewItems({items}) {
     <div>
       <div className="">
         <h4>{title}</h4>
+        <div className="img-wrap">
         <img src={img} alt="" /> 
+        </div>
         <div className="">
           <p>{category}</p>
           <p>{company}</p>
